@@ -1,0 +1,208 @@
+{
+  "name": "dyninst",
+  "version": "1.0.0",
+  "category": "dynamic-instrumentation",
+  "skill_count": 50,
+  "skills": [
+    {
+      "slug": "core-dump-analyze",
+      "sha256": "86c4ac6fccfc316c6cfe72f7fdbe529a924ab9d92e05ce4774e318d3a168b38f"
+    },
+    {
+      "slug": "crash-signal-decode",
+      "sha256": "8fbf0f574b7c3ef8e3d862a68ffa07b07f90b1a7990602dc77cdd64a4a0551f1"
+    },
+    {
+      "slug": "cross-arch-normalize",
+      "sha256": "01b75911f3e006e98a020d17e2bad65db642fcad093a3cef75a1d976dbb3d56a"
+    },
+    {
+      "slug": "ebpf-kprobe",
+      "sha256": "2ceab44532197b3bf63dede357a81b1b6993d2ee6a9a54f8ff5b7dde2d8118e8"
+    },
+    {
+      "slug": "ebpf-tracepoint",
+      "sha256": "802bf0b9f36e254e3981de90993a4dda383ba3355563ab2e07753c2d8584a2ed"
+    },
+    {
+      "slug": "ebpf-uprobe",
+      "sha256": "c0cf282a3eaeeb9d5fb4f36ee7c1cf7e264dde104549d750710d240ffa6148f4"
+    },
+    {
+      "slug": "emitter-benchmark",
+      "sha256": "9b49382671ea096e684166b05d107cb3a9290682f09e9d94c4165f0a2a0827de"
+    },
+    {
+      "slug": "emitter-gdb-macro",
+      "sha256": "2792be3b3938ab39830beed6b7166a1ab309433353de2e64a40be8ce869e209b"
+    },
+    {
+      "slug": "emitter-ldpreload-capture",
+      "sha256": "13b8d009c0d538c1c36b6f4ac9c6c48ce6559806ab9f49c9f846323d2f05b090"
+    },
+    {
+      "slug": "emitter-script-generate",
+      "sha256": "79fa571d9b8890f6d7591b2c9a02d72fcfed688cb57481771a0ecfdb0aca0972"
+    },
+    {
+      "slug": "frida-attach",
+      "sha256": "2a6d666ad18635011dab0c6487c8fe7e3e3e4ad2fd40a1cd75a08e7b81e1bc23"
+    },
+    {
+      "slug": "frida-enumerate-modules",
+      "sha256": "0300ad05bbc4268168ce4dabc9102cb04fa471d2be2871295f54241c4cdfd6d0"
+    },
+    {
+      "slug": "frida-hook-native",
+      "sha256": "215318b34cb13b60421c6b8705b5f40d7f0475771109767d4fc4089f6d639e0d"
+    },
+    {
+      "slug": "frida-java-hook",
+      "sha256": "287c37ebf9b7d19884274f1fe5287da50a9dfa0c346826d3aef4260e1b12b008"
+    },
+    {
+      "slug": "frida-post-mortem-core",
+      "sha256": "07d89de7deb1831ce6268a0958e7c1318b1ab4c6dbbfefa0aa7f97005af82dfc"
+    },
+    {
+      "slug": "frida-script-reload",
+      "sha256": "d1ad3da5b7524585e21b92128636676b7d2a82c1547cb0eb2a8f83631b018b52"
+    },
+    {
+      "slug": "frida-spawn",
+      "sha256": "e997634be11a290ac61f6877b0420f0370db3160274ef845b08193b985790946"
+    },
+    {
+      "slug": "frida-stalker-trace",
+      "sha256": "85fbff990cabc6d8a1ac963a77028216e220642244b7ca92a5b4b60c9a75b0c2"
+    },
+    {
+      "slug": "frida-types-from-module",
+      "sha256": "6accffaf1a51642219fad4079e3c444db5eaa687e604b58f335101998fccb8c6"
+    },
+    {
+      "slug": "frida-unload",
+      "sha256": "05564b5d7a014c02a1d48567aee5299be4bdd70135c6367ba02514f856626e45"
+    },
+    {
+      "slug": "gdb-attach",
+      "sha256": "53e87828c4f84b62caa3839e01ca7d5dcf37ea62b59aa2db45e7b1e818e57ebf"
+    },
+    {
+      "slug": "gdb-break-condition",
+      "sha256": "63cffed514cd881c75b42686318fb0b0bea7de85b318ddb4453ddf1d325fecc5"
+    },
+    {
+      "slug": "gdb-breakpoint",
+      "sha256": "402db139ef014ccadd4016301dec48e464f3a035b03a221f7a4a92a88769d70f"
+    },
+    {
+      "slug": "gdb-frame-capture",
+      "sha256": "dace3354c8201b4587cf166491077f81741df58c1f9868cea4845948e50d4ace"
+    },
+    {
+      "slug": "gdb-remote-target",
+      "sha256": "21857563e945d52a94f5ad9e61e75f6a2037c5ca76ba06b37e8a500f3cd344ef"
+    },
+    {
+      "slug": "gdb-stepi",
+      "sha256": "aa0f9f73a67e35b249e593887a8fc92ca7e1c426c54e1ee06c3472417f13eb40"
+    },
+    {
+      "slug": "gdb-tracepoints",
+      "sha256": "538a387b482286997f9ced0854ac3f87b8d92f9d2ead9410129cc45c053e25b8"
+    },
+    {
+      "slug": "gdb-watchpoint",
+      "sha256": "2375a50be051f34fcc0e3134fc0fc84c3a35539de0eb5b622a02200fd82cb5a7"
+    },
+    {
+      "slug": "ldpreload-constructor",
+      "sha256": "247e850d7731ba919c2858538781b63b8c23a9ec8b2a6381cd24869d3988ea6a"
+    },
+    {
+      "slug": "ldpreload-hook",
+      "sha256": "b17cd20836a8f315d7537c29c088a21639cc0dd1f2c6ead04e81324667b4ddf6"
+    },
+    {
+      "slug": "ldpreload-launch",
+      "sha256": "e0acc77ae1abf7a7becf5fb1a2739a209ff6874c2ec26eebfd0f9be8d7479bf2"
+    },
+    {
+      "slug": "ldpreload-net-intercept",
+      "sha256": "c5ab88d991c00060135325f117ee466dc631810e667fe8527804c254c4cdead0"
+    },
+    {
+      "slug": "ldpreload-syscall",
+      "sha256": "a11dd943da48fb6beebcd479127b7df55c9c0306ea5758e706df99066bfa9bf5"
+    },
+    {
+      "slug": "memory-region-map",
+      "sha256": "52150d254120e61559da4eb165d5533688aa1caa08eb5d910179835c38c3792f"
+    },
+    {
+      "slug": "overhead-control-run",
+      "sha256": "9386cf0658b344f73a4d9302f4b393aad9bd275cd458c9c2c156dd6d5c6de489"
+    },
+    {
+      "slug": "plan-baseline-capture",
+      "sha256": "ac167e0ded6fa97f01620d907c65bf6f4418307869df18bf6c1904f0da4d0e37"
+    },
+    {
+      "slug": "plan-emitter-select",
+      "sha256": "5f69c3329b2d437d09ed7d8d21b5fcbf6443e6a70d5007f65622926d61eb23aa"
+    },
+    {
+      "slug": "plan-generate",
+      "sha256": "afc8329004c6aea4cfbc8db45ec84a823d4540cb28fc86e744243d0309a5cb0f"
+    },
+    {
+      "slug": "plan-probe-map",
+      "sha256": "a53bffaac34ff36160e92e37a6425fbf115db1c75d4e977f182c6c66353913e6"
+    },
+    {
+      "slug": "probe-function-entry",
+      "sha256": "eeeae89b3535a72b8059be39ed9523a1dbfb8999c4ae55a8d9d36ab2f2798c72"
+    },
+    {
+      "slug": "probe-function-return",
+      "sha256": "9a12ea2361ed434310c12261889f84e25094714976be5753970022482dda660f"
+    },
+    {
+      "slug": "probe-multi-entry",
+      "sha256": "e42a8ba444b7f1018a23285e7d0a7a46678aa319cd5f5ce5cb082172056eb9d2"
+    },
+    {
+      "slug": "scope-enforce-plan",
+      "sha256": "250544cd20ff6cc95417efe65b8e82d8d9821145f97fab4d8bf7b9c4b7e9a658"
+    },
+    {
+      "slug": "scope-merge-two-plans",
+      "sha256": "44cdb2f82fde421b93df0871551a43db339dd060f835288d4be3891f3c11436a"
+    },
+    {
+      "slug": "scope-validate-imports",
+      "sha256": "1cdf64774f07f0946e84380e34b5a5469522f5a03a99e3a5d46002ab2b8da5e4"
+    },
+    {
+      "slug": "signal-capture",
+      "sha256": "d6ce047ce8899d902d70d40a73b83fa0633a719ee31cca2a882d35a2ad8e8104"
+    },
+    {
+      "slug": "signal-handler-safe-unload",
+      "sha256": "3260d6ff591a0b808d530313d415cd1954e0e83ac12f9fa0fa86faaa4077603e"
+    },
+    {
+      "slug": "teardown-force-detach",
+      "sha256": "6fcb1943879ee863b1f37c32f640e2e6ebb2ae4848653e91125f08949492b956"
+    },
+    {
+      "slug": "teardown-verify",
+      "sha256": "bdc7d5da8dd56c948677555a1e2720734121564c94f171087917410f7b05042f"
+    },
+    {
+      "slug": "type-inspect-module",
+      "sha256": "fc6916a82b0a35226853b04b4cf582003051711d31eff3492eb3dcef287a7cbb"
+    }
+  ]
+}

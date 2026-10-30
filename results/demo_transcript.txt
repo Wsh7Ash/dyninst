@@ -1,0 +1,44 @@
+$ dyninst validate
+50/50 skills valid
+
+$ dyninst list --phase kernel
+ebpf-kprobe                        kernel       Attach an eBPF kprobe to a kernel function
+ebpf-tracepoint                    kernel       Use a stable tracepoint instead of a raw kprobe
+ebpf-uprobe                        kernel       Attach an eBPF uprobe to a user-space function
+3 skill(s)
+
+$ dyninst show gdb-watchpoint
+---
+name: gdb-watchpoint
+description: "Trap the exact instruction that mutates a field or buffer so you can attribute an unexpected value to the writer instead of guessing. Use when a value changes unexpectedly and you need the writing instruction, not just the bad value"
+pack: dyninst
+version: 1.0.0
+category: dynamic-instrumentation
+tags: [gdb, watchpoint, memory]
+phase: debug
+---
+
+# Catch a write to memory with a GDB watchpoint
+
+> Trap the exact instruction that mutates a field or buffer so you can attribute an unexpected value to the writer instead of guessing
+
+**Use when:** a value changes unexpectedly and you need the writing instruction, not just the bad value
+
+**Avoid when:** the watched region is written on every iteration, which makes the watchpoint unusable
+
+## Procedure
+
+1. Resolve the address of the field or buffer with print &obj.field, and note the byte width.
+2. Set a watchpoint on that address with watch *(int*)0xADDR sized to the field.
+3. Continue and capture the stack at the stop, which is the writer you were looking for.
+4. Remove the watchpoint and record the writer's frame, function and source line.
+
+## Signals
+
+- watchpoint-armed
+
+$ python -c '<drop the pitfalls from one skill and re-validate>'
+issues: ['plan-generate: pitfalls: need >= 2, got 0']
+
+$ python -c '<rename one skill and re-validate>'
+issues: ["duplicate titles in pack: ['capture a clean baseline before instrumenting']", 'duplicate summaries in pack']
